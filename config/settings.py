@@ -37,9 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'course_app',
-    'ckeditor',
-    'registration_app',
+    # local application
+    "course_app",
+    "registration_app",
+    # installed application
+    "ckeditor",
+    "ckeditor_uploader",
+    "crispy_forms",
 ]
 
 MIDDLEWARE = [
