@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
@@ -7,6 +8,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 =======
+=======
+>>>>>>> abaa2bb42fb4e213fe14196f547c0ff46fea4b76
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
@@ -15,8 +18,14 @@
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">
+<<<<<<< HEAD
     <option name="format" value="GOOGLE" />
     <option name="myDocStringFormat" value="Google" />
   </component>
 >>>>>>> cd66fd1ab84debe91f8c8a2d7e3ece186021355c
+=======
+    <option name="format" value="PLAIN" />
+    <option name="myDocStringFormat" value="Plain" />
+  </component>
+>>>>>>> abaa2bb42fb4e213fe14196f547c0ff46fea4b76
 </module>

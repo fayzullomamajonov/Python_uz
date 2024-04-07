@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Black">
@@ -16,4 +17,9 @@
     <option name="shown" value="true" />
   </component>
 >>>>>>> cd66fd1ab84debe91f8c8a2d7e3ece186021355c
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (PyTutorialUz) (3)" project-jdk-type="Python SDK" />
+>>>>>>> abaa2bb42fb4e213fe14196f547c0ff46fea4b76
 </project>
