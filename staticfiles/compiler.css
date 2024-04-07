@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f7;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#codearea,
+#output {
+    height: 300px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 24px;
+    resize: vertical;
+}
+
+#output {
+    height: 150px;
+    padding: 5px;
+}
+
+button {
+    color: green;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid green;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #388e3c;
+    color: white;
+}

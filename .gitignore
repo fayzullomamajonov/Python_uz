@@ -1,27 +1,4 @@
-# Ignore virtual environment
-venv/
-
-# Ignore local development settings
-*.env
-
-# Ignore database files
-*.sqlite3
-db.sqlite3
-
-# Ignore static files collected by Django
-staticfiles/
-
-# Ignore media files uploaded by users
-media/
-
-# Ignore compiled Python files
-*.pyc
-__pycache__/
-
-# Ignore development-specific files
-*.log
-*.pot
-*.pyo
-*.swp
-*~
-.DS_Store
+dg.sqlite3
+__pycache__
+.env
+venv
