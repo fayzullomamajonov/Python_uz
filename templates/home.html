@@ -1,13 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>W3School</h1>
-<h1> Etibor </h1>
+{% extends 'base.html' %} {% block content %}
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+  <div class="position-sticky">
+    <div class="list-group list-group-flush mx-3 mt-4">
+      <button
+        class="list-group-item list-group-item-action py-2 ripple"
+      ><b><span>Python Tutorial</span></b>
+      <!-- data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" -->
+      </button>
+      <ul
+        id="collapseExample1"
+        class="collapse show list-group list-group-flush"
+      >
+<!-- <div class="collapse" id="collapseExample"> -->
+      {% for th in themes %}
+        <li class=" list-group-item py-1">
+          <a
+            style="text-decoration: none"
+            href="{% url 'homepage_with_pk' th.pk %}"
+            class="text-reset"
+            >{{th.theme_name}}</a>
+        </li>
+        {% endfor %}
+<!-- </div> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+<div style="width: 900px" class="container">
+{% if themes.count == 1 %}
+  <h3 style="text-transform: uppercase; color:orange"">{{ themes.0.theme_name }}</h3>
+  <br />
+  {{ themes.0.theme_body | safe }}
+  {% else %}
+  {% if theme  %}
+  <h3 style="text-transform: uppercase; color:orange">{{ theme.theme_name }}</h3>
+  <br />
+  {{ theme.theme_body | safe }} 
+{% else %} 
+    {% if default_theme %}
+        <h3 style="text-transform: uppercase;color:orange">{{ default_theme.theme_name }}</h3>
+        <br>
+        <p>{{ default_theme.theme_body | safe }}</p>
+    {% else %}
+    <h1>{{ message }}</h1>
+    {% endif %} 
+{% endif %}
+{% endif %}
+</div>
 
-<h2>Nurjahon o'zgartirdi</h2>
-</body>
-</html>
+{% endblock %}
