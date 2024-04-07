@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     path("ckeditor/", include("ckeditor_uploader.urls")),
     path("admin/", admin.site.urls),
@@ -34,6 +35,10 @@ urlpatterns = [
     path("", include("course_app.urls")),
     path("registration/", include("registration_app.urls")),
 
+=======
+    path("", include("course_app.urls")),
+    path("registration/", include("registration_app.urls")),
+>>>>>>> 927edc9c27f90b9e321fe712c9bf92d1c9929a77
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -6,7 +6,7 @@ from .views import homepage
 
 urlpatterns = [
     path("", homepage, name="homepage"),
-    # path("home/<int:pk>/", homepage, name="homepage_with_pk"),
+    path("home/<int:pk>/", homepage, name="homepage_with_pk"),
     # path("index", index, name="index"),
     # path("runcode/", runcode, name="runcode"),
 ]
