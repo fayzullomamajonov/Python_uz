@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> abaa2bb42fb4e213fe14196f547c0ff46fea4b76
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectModuleManager">
@@ -6,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/Python_Uz.iml" filepath="$PROJECT_DIR$/.idea/Python_Uz.iml" />
     </modules>
   </component>
+<<<<<<< HEAD
 =======
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
@@ -15,4 +19,6 @@
     </modules>
   </component>
 >>>>>>> cd66fd1ab84debe91f8c8a2d7e3ece186021355c
+=======
+>>>>>>> abaa2bb42fb4e213fe14196f547c0ff46fea4b76
 </project>

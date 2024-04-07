@@ -5,6 +5,7 @@
       <option name="ignoredPackages">
         <value>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <list size="1">
             <item index="0" class="java.lang.String" itemvalue="typing_extensions" />
 =======
@@ -30,10 +31,15 @@
             <item index="18" class="java.lang.String" itemvalue="asgiref" />
             <item index="19" class="java.lang.String" itemvalue="sqlparse" />
 >>>>>>> cd66fd1ab84debe91f8c8a2d7e3ece186021355c
+=======
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="typing_extensions" />
+>>>>>>> abaa2bb42fb4e213fe14196f547c0ff46fea4b76
           </list>
         </value>
       </option>
     </inspection_tool>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
@@ -44,5 +50,14 @@
       </option>
     </inspection_tool>
 >>>>>>> cd66fd1ab84debe91f8c8a2d7e3ece186021355c
+=======
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="kurslar.urls.*" />
+        </list>
+      </option>
+    </inspection_tool>
+>>>>>>> abaa2bb42fb4e213fe14196f547c0ff46fea4b76
   </profile>
 </component>
