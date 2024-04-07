@@ -1,73 +1,73 @@
-# # .gitignore
+# .gitignore
 
-# # Byte-compiled / optimized / DLL files
-# __pycache__/
-# *.py[cod]
-# *$py.class
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# # Virtual environments
-# venv/
-# env/
-# .venv/
-# pip-wheel-metadata/
+# Virtual environments
+venv/
+env/
+.venv/
+pip-wheel-metadata/
 
-# # Database
-# *.sqlite3
-# *.db
+# Database
+*.sqlite3
+*.db
 
-# # Media files
-# media/
+# Media files
+media/
 
-# # Static files
-# staticfiles/
+# Static files
+staticfiles/
 
-# # Secret key
-# *.secret_key
+# Secret key
+*.secret_key
 
-# # Development and production environment variables
-# .env
-# .env.local
-# .env.prod
+# Development and production environment variables
+.env
+.env.local
+.env.prod
 
-# # IDE files
-# .vscode/
-# .idea/
-# *.suo
-# *.ntvs*
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
 
-# # Log files
-# *.log
+# Log files
+*.log
 
-# # Caches and compiled files
-# __pycache__/
-# *.pyc
-# *.pyo
-# *.pyd
+# Caches and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# # macOS
-# .DS_Store
+# macOS
+.DS_Store
 
-# # Windows
-# Thumbs.db
-# ehthumbs.db
+# Windows
+Thumbs.db
+ehthumbs.db
 
-# # Python local build / dist directories
-# build/
-# dist/
-# *.egg-info/
+# Python local build / dist directories
+build/
+dist/
+*.egg-info/
 
-# # Django migrations
-# *.pyc
-# __pycache__/
-# *.pyo
+# Django migrations
+*.pyc
+__pycache__/
+*.pyo
 
-# # Docker Compose
-# docker-compose.yml
-# docker-compose.override.yml
-# *.override.yml
+# Docker Compose
+docker-compose.yml
+docker-compose.override.yml
+*.override.yml
 
-# # pyenv
-# .python-version
+# pyenv
+.python-version
 
-# # Pycache
-# __pycache__/
+# Pycache
+__pycache__/
