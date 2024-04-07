@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Python Compiler</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'compiler.css' %}" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/python/python.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+
+  <body>
+
+    <form action="/runcode/" method="post">
+      <h1 style="font-weight: 800;text-align:center">
+        Python<span style="color: orange;text-transform: uppercase;">Compiler</span>
+      </h1>
+      {% csrf_token %}
+      <div>
+        <!-- <label for="codearea">Code Area</label> -->
+<div style="border: 1px solid rgb(5, 16, 5);box-shadow:0px 0px 5px 5px rgb(149, 158, 149);">
+<textarea id="codearea" name="codearea" rows="10">
+{{code}}
+</textarea>
+        </div>
+      </div>
+      <hr />
+      <div>
+        <label for="output">Natija:</label>
+        <textarea id="output" name="output" rows="4" disabled>
+{{ output }}</textarea
+        >
+      </div>
+      <button style="text-overflow: clip;" type="submit">Run Code</button>
+    </form>
+    <script>
+      var codeEditor = CodeMirror.fromTextArea(
+        document.getElementById("codearea"),
+        {
+          mode: "python",
+          lineNumbers: true,
+          indentUnit: 4,
+          extraKeys: { Tab: "indentMore", "Shift-Tab": "indentLess" },
+        }
+      );
+    </script>
+  </body>
+</html>
+<p>m</p>
