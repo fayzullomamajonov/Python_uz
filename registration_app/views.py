@@ -3,7 +3,6 @@ from django.contrib.auth import login, authenticate
 from .forms import SignUpForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
-# Create your views here.
 
 def signup(request):
     if request.method == "POST":
