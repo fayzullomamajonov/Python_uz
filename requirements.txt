@@ -1,0 +1,9 @@
+dj-database-url
+Django
+django-ckeditor
+django-environ
+django-js-asset
+gunicorn
+packaging
+psycopg2
+typing_extensions
