@@ -67,11 +67,33 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Features</a>
+                <a class="nav-link active" href="#">Biz haqimizda</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" target="_blank" href="{% url 'index' %}">Python Compliter</a>
               </li>
+            </ul>
+          </div>
+          <div style="margin-right: 15px;" class="dropdown">
+            {% if request.user.username %}
+            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              {{ request.user.username }}
+            </button>
+            {% else %}
+            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Sign Up
+            </button>
+            {% endif %}
+
+            <ul class="dropdown-menu">
+              {% if request.user.is_authenticated %}
+              <li><a class="dropdown-item" href="{% url 'login' %}">Tizimga kirish</a></li>
+              {% else %}
+              <li><a class="dropdown-item" href="{% url 'signup' %}">Ro'yhatdan o'tish</a></li>
+              <li><a class="dropdown-item" href="{% url 'login' %}">Tizimga kirish</a></li>
+              {% endif %}
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'logout' %}">Tizimdan chiqish</a></li>
             </ul>
           </div>
          <form class="d-flex">
@@ -86,29 +108,7 @@
               Search
             </button>
           </form>
-          <!-- Example single danger button -->
-          <div style="margin-left: 15px;" class="dropdown">
-            {% if request.user.username %}
-            <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              {{ request.user.username }}
-            </button>
-            {% else %}
-            <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Sign Up
-            </button>
-            {% endif %}
 
-            <ul class="dropdown-menu">
-              {% if request.user.is_authenticated %}
-              <li><a class="dropdown-item" href="{% url 'login' %}">Login</a></li>
-              {% else %}
-              <li><a class="dropdown-item" href="{% url 'signup' %}">Sign In</a></li>
-              <li><a class="dropdown-item" href="{% url 'login' %}">Login</a></li>
-              {% endif %}
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
-            </ul>
-          </div>
         </div>
       </nav>
     </header>
