@@ -1,0 +1,10 @@
+{% extends 'base.html' %} 
+{% block content %}
+<div style="padding:20px;" class="card">
+<form method="post">
+  {% csrf_token %} 
+  {{ form.as_p }}
+  <button type="submit" class="btn btn-success">Ro'yhatdan o'tish</button>
+</form>
+</div>
+{% endblock %}

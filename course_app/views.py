@@ -39,3 +39,35 @@ def homepage(request, pk=None):
             }
 
     return render(request, "home.html", context=context)
+
+
+def execute_code(code):
+    try:
+        output_buffer = StringIO()
+        with redirect_stdout(output_buffer):
+            exec(code)
+        output = output_buffer.getvalue()
+    except Exception as e:
+        output = f"Error: {str(e)}\n{traceback.format_exc()}"
+    return output
+
+
+def index(request):
+    if request.method == "GET":
+        code_string = request.GET.get("value", "")
+        code_string = (
+            code_string.replace("\\n", "\n").replace("\\t", "\t").replace("plus", "+")
+        )
+        output = execute_code(code_string)
+        return render(request, "compiler.html", {"code": code_string, "output": output})
+
+
+def runcode(request):
+    if request.method == "POST":
+        codeareadata = request.POST.get("codearea", "")
+        output = execute_code(codeareadata)
+        return render(
+            request, "compiler.html", {"code": codeareadata, "output": output}
+        )
+    else:
+        return HttpResponseBadRequest("Method not allowed")
