@@ -1,3 +1,4 @@
+asgiref
 dj-database-url
 Django
 django-ckeditor
@@ -6,4 +7,7 @@ django-js-asset
 gunicorn
 packaging
 psycopg2
+sqlparse
 typing_extensions
+tzdata
+whitenoise
