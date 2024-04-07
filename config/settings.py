@@ -37,9 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'course_app',
     'ckeditor',
     'registration_app',
+=======
+    'registration_app',
+    'course_app',
+    'ckeditor',
+>>>>>>> 02f4cbf701ccb829e96c5f3af92fc4ae3508d9cb
 ]
 
 MIDDLEWARE = [

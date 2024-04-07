@@ -1,5 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+# Default ignored files
+/shelf/
+/workspace.xml
+=======
+>>>>>>> 02f4cbf701ccb829e96c5f3af92fc4ae3508d9cb
+<<<<<<< HEAD
 # Default ignored files
 /shelf/
 /workspace.xml
@@ -8,8 +15,12 @@
 /shelf/
 /workspace.xml
 >>>>>>> cd66fd1ab84debe91f8c8a2d7e3ece186021355c
+<<<<<<< HEAD
 =======
 # Default ignored files
 /shelf/
 /workspace.xml
 >>>>>>> abaa2bb42fb4e213fe14196f547c0ff46fea4b76
+=======
+>>>>>>> 7159c4f65c5c3925293bf150bb7a018964b285a8
+>>>>>>> 02f4cbf701ccb829e96c5f3af92fc4ae3508d9cb

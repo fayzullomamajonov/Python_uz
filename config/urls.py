@@ -20,6 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+<<<<<<< HEAD
 
     path('admin/', admin.site.urls),
     path("ckeditor/", include("ckeditor_uploader.urls")),
@@ -29,6 +30,11 @@ urlpatterns = [
     path("registration/", include("registration_app.urls")),
     path("", include("course_app.urls")),
     path("registration/", include("registration_app.urls")),
+=======
+    path('admin/', admin.site.urls),
+    path("registration/", include("registration_app.urls")),
+    path("", include("course_app.urls")),
+>>>>>>> 02f4cbf701ccb829e96c5f3af92fc4ae3508d9cb
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

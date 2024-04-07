@@ -1,0 +1,52 @@
+{% extends 'base.html' %} 
+{% block content %}
+<div style="padding:20px;" class="card">
+  {% if error_message %}
+  <div id="errorMessage">
+    <div class="p-3 mb-2 bg-danger text-white">
+      <span style="margin-right:4px;">{{ error_message }}</span>
+      <button type="button" class="btn-close float-end" aria-label="Close" onclick="removeErrorMessage()"></button>
+    </div>
+  </div>
+{% endif %}
+
+<script>
+  // 3 sekunddan keyin error xabarini ekrandan o'chirish
+  setTimeout(function() {
+    removeErrorMessage();
+  }, 5000);
+
+  function removeErrorMessage() {
+    var errorMessage = document.getElementById('errorMessage');
+    errorMessage.style.display = 'none';
+  }
+</script>
+
+<br>
+<form action="{% url 'login' %}" method="POST">
+    {% csrf_token %}
+    <div style="width: 500px;" class="form-group">
+      <label for="exampleInputEmail1">Username</label>
+      <input type="text" class="form-control" name="username" id="username" class="form__input1" placeholder="Foydalanuvchi nomi">
+      <small id="username" class="form-text text-muted">Foydalanuvchi nomini kiriting</small>
+    </div>
+
+    <br>
+    <div>
+      <label for="exampleInputEmail1">Parol</label>
+      <input type="password" class="form-control" name="password" id="password" class="form__input1" placeholder="Parol">
+      <small id="username" class="form-text text-muted">Parolni kiriting</small>
+
+    </div>
+    <br>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <input type="submit" value="Tizimga kirish" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    </div>
+    <br>
+</form>
+</div>
+
+
+
+
+{% endblock %}
