@@ -56,7 +56,7 @@ def index(request):
     if request.method == "GET":
         code_string = request.GET.get("value", "")
         code_string = (
-            code_string.replace("\\n", "\n").replace("\\t", "\t").replace("plus", "+")
+            code_string.replace("\\n", "\n").replace("\\t", "\t").replace("plus", "+").replace("comment","#")
         )
         output = execute_code(code_string)
         return render(request, "compiler.html", {"code": code_string, "output": output})
