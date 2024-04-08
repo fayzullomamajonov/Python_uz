@@ -9,7 +9,7 @@ from django.db.models import Q
 
 
 def homepage(request, pk=None):
-    themes = ThemeModel.objects.all()
+    themes = ThemeModel.objects.all().order_by('id')
     default_theme = ThemeModel.objects.order_by('id').first()
     search_query = request.GET.get('search')
 
